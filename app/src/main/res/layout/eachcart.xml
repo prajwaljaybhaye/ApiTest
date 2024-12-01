@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="20dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/proImg"
+            android:layout_width="100dp"
+            android:src="@drawable/demo"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp"/>
+
+
+        <TextView
+            android:id="@+id/prodTitle"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/ratingCard"
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:background="@color/blus"
+            android:text="3.9"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"
+            android:textSize="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:progressTint="@color/star"
+        android:layout_marginTop="50dp"
+        android:numStars="5"
+        android:rating="2"
+        android:scaleX="0.50"
+        android:scaleY="0.50"
+        android:stepSize="0.1"
+        />
+
+
+</androidx.cardview.widget.CardView>
